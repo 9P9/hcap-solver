@@ -13,7 +13,7 @@ bypass("51829642-2cda-4b09-896c-594f89d700cc", "democaptcha.com", agent).then(r 
         var token = r[`generated_pass_UUID`];
     } else {
         //Failed HCAP
-        console.log("Error or sumn");
+        console.log("Error!");
     }
 })
 ``` 
