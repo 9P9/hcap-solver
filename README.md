@@ -1,6 +1,6 @@
 # hcap-solver
-Simple hcap solver
-
+### Simple hcap solver
+### Uses Request Library unlike other variations of this solver
 ## Example Usage
 
 ```js
