@@ -1,11 +1,10 @@
-const {
-    bypass
-} = require(`./solver.js`);
+const { bypass } = require(`./solver.js`);
 const fs = require(`fs`);
 const proxies = fs.readFileSync('proxies.txt', 'utf-8').replace(/\r/gi, '').split('\n');
 const ProxyAgent = require('proxy-agent');
 const request = require(`request`);
 
+//Example Proxied Solving
 
 for (i = 0; i < 500; i++) {
     var proxy = proxies[~~(Math.random() * proxies.length)];
