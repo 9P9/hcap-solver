@@ -12,7 +12,8 @@ for (i = 0; i < 500; i++) {
     bypass("51829642-2cda-4b09-896c-594f89d700cc", "democaptcha.com", agent).then(r => {
         if (r && r[`generated_pass_UUID`]) {
             var token = r[`generated_pass_UUID`];
-            console.log("Working");
+            
+            //Checking Token With Site
             request.post(`http://democaptcha.com/demo-form-eng/hcaptcha.html`, {
                 headers: {
                     'Connection': 'keep-alive',
@@ -32,7 +33,7 @@ for (i = 0; i < 500; i++) {
             })
         } else {
             //Failed HCAP
-            console.log("Error or sumn");
+            console.log("Failed to Retrieve Code");
         }
     })
 }
